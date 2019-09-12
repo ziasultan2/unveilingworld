@@ -13,7 +13,8 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
-  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = new FlutterLocalNotificationsPlugin();
+  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+      new FlutterLocalNotificationsPlugin();
 
   @override
   void initState() {
@@ -40,37 +41,28 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-
   Future<void> onSelectNotification(String payload) async {
-
     await Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => MyApp()),
     );
   }
 
-  showNotification(Map<String, dynamic> message){
+  showNotification(Map<String, dynamic> message) {
     var android = new AndroidNotificationDetails(
-        "channel_id",
-        "channel_name",
-        "channel_description");
+        "channel_id", "channel_name", "channel_description");
     var ios = new IOSNotificationDetails();
     var platform = new NotificationDetails(android, ios);
     flutterLocalNotificationsPlugin.show(
-        0, message['title'], message['body'],  platform, payload:'Custom_Sound' );
+        0, message['title'], message['body'], platform,
+        payload: 'Custom_Sound');
   }
-
-
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
-      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       home: Splash(),
     );
   }
 }
-
-
