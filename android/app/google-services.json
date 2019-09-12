@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "571292144995",
+    "firebase_url": "https://benchurch-505a9.firebaseio.com",
+    "project_id": "benchurch-505a9",
+    "storage_bucket": "benchurch-505a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571292144995:android:28331a79dc12def161ef56",
+        "android_client_info": {
+          "package_name": "com.ben.church"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571292144995-vdtiid31g65ign5i26938vfnsit17ed3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC77P31AZJUm0KU1IX2I83Y4Xs0_6_LAuc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571292144995-vdtiid31g65ign5i26938vfnsit17ed3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "571292144995-7109f5q6kikb4lbpjnirfvdf9bfo091q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ben.church"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
