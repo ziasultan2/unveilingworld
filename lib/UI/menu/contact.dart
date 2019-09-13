@@ -110,10 +110,26 @@ class _ContactState extends State<Contact> with SingleTickerProviderStateMixin {
 
                   Transform(
                     transform: Matrix4.translationValues(phone.value * width, 0.0, 0.0),
-                    child: ListTile(
-                      leading: Icon(FontAwesomeIcons.tabletAlt, color: Color(0xFF54467B),),
-                      title: Text('+1 (404) 379-1879', style: TextStyle(fontSize: 20, color: Color(0xFF54467B)), textAlign: TextAlign.left,),
+                    child:
+                    InkWell(
+                      onTap: () async{
+                        const url = "tel:+1 (404) 379-1879";
+
+                        if (await canLaunch(url))
+                        {
+                          await launch(url);
+                        }
+                        else{
+                          throw 'Could not launch $url';
+                        }
+                      },
+                      child:ListTile(
+                        leading: Icon(FontAwesomeIcons.tabletAlt, color: Color(0xFF54467B),),
+                        title:
+                        Text('+1 (404) 379-1879', style: TextStyle(fontSize: 20, color: Color(0xFF54467B)), textAlign: TextAlign.left,),
+                      ),
                     ),
+
                   ),
 
                   Transform(
