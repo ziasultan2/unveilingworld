@@ -142,12 +142,17 @@ class _DonateState extends State<Donate> with SingleTickerProviderStateMixin {
                   margin: EdgeInsets.only(top: 30),
                   child:
                   InkWell(
-                    onTap: (){
-                      Navigator.push(context,
-                          MaterialPageRoute(
-                            builder: (context) => DonateWeb(),
-                          )
-                      );
+                    onTap: () async{
+                      const url = "https://www.givelify.com/givenow/1.0/NDA4MzM=/selection";
+
+                      if (await canLaunch(url))
+                      {
+                        await launch(url);
+                      }
+                      else{
+                        throw 'Could not launch $url';
+                      }
+
                     },
                     child:  Container(
 

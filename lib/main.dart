@@ -62,8 +62,7 @@ class _MyAppState extends State<MyApp> {
     var ios = new IOSNotificationDetails();
     var platform = new NotificationDetails(android, ios);
     flutterLocalNotificationsPlugin.show(
-        0, message['title'], message['body'], platform,
-        payload: 'Custom_Sound');
+        0, message['title'], message['body'], platform, payload: 'Custom_Sound');
   }
 
   @override
