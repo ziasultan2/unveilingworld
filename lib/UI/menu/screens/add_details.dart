@@ -33,7 +33,7 @@ class _NoteDetailsAddState extends State<NoteDetailsAdd> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor:Color(0xFF1A237E),
+        backgroundColor: Color(0xFF1A237E),
         centerTitle: true,
         title: Text(appBarTitle),
       ),
@@ -82,10 +82,8 @@ class _NoteDetailsAddState extends State<NoteDetailsAdd> {
                   Expanded(
                     child: RaisedButton(
                       color: Color(0xFF1A237E),
-                      textColor: Theme.of(context).primaryColorLight,
                       child: Text(
-                        'Save',
-                        textScaleFactor: 1.5,
+                        'Save', style: TextStyle(color: Colors.white30),
                       ),
                       onPressed: () {
                         setState(() {
