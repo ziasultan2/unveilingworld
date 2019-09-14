@@ -65,7 +65,7 @@ class _DonateState extends State<Donate> with SingleTickerProviderStateMixin {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("images/donate.jpg"),
+            image: AssetImage("images/ocean.jpg"),
             fit: BoxFit.cover,
           ),
         ),
@@ -116,7 +116,8 @@ class _DonateState extends State<Donate> with SingleTickerProviderStateMixin {
 
                       if (await canLaunch(url))
                       {
-                        await launch(url);
+
+                        await launch(url, forceSafariVC: true);
                       }
                       else{
                         throw 'Could not launch $url';
@@ -147,7 +148,7 @@ class _DonateState extends State<Donate> with SingleTickerProviderStateMixin {
 
                       if (await canLaunch(url))
                       {
-                        await launch(url);
+                        await launch(url, forceSafariVC: true);
                       }
                       else{
                         throw 'Could not launch $url';
@@ -179,7 +180,7 @@ class _DonateState extends State<Donate> with SingleTickerProviderStateMixin {
 
                       if (await canLaunch(url))
                       {
-                        await launch(url);
+                        await launch(url, forceSafariVC: true);
                       }
                       else{
                         throw 'Could not launch $url';
