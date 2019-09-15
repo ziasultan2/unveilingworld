@@ -329,4 +329,9 @@ class _HomesState extends State<Homes> with SingleTickerProviderStateMixin {
           );
         });
   }
+  @override
+  void dispose(){
+    animationController.dispose();
+    super.dispose();
+  }
 }

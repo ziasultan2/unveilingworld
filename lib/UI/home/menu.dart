@@ -99,7 +99,7 @@ class _MenuState extends State<Menu> {
 
                             if (await canLaunch(url))
                             {
-                              await launch(url, forceSafariVC: true);
+                              await launch(url, forceSafariVC: false);
                             }
                             else{
                               throw 'Could not launch $url';
@@ -113,7 +113,7 @@ class _MenuState extends State<Menu> {
 
                             if (await canLaunch(url))
                             {
-                              await launch(url, forceSafariVC: true);
+                              await launch(url, forceSafariVC: false);
                             }
                             else{
                               throw 'Could not launch $url';
@@ -127,7 +127,7 @@ class _MenuState extends State<Menu> {
 
                             if (await canLaunch(url))
                             {
-                              await launch(url, forceSafariVC: true);
+                              await launch(url, forceSafariVC: false);
                             }
                             else{
                               throw 'Could not launch $url';
@@ -141,7 +141,7 @@ class _MenuState extends State<Menu> {
 
                             if (await canLaunch(url))
                             {
-                              await launch(url, forceSafariVC: true);
+                              await launch(url, forceSafariVC: false);
                             }
                             else{
                               throw 'Could not launch $url';
@@ -155,7 +155,7 @@ class _MenuState extends State<Menu> {
 
                             if (await canLaunch(url))
                             {
-                              await launch(url, forceSafariVC: true);
+                              await launch(url, forceSafariVC: false);
                             }
                             else{
                               throw 'Could not launch $url';

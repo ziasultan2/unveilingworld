@@ -79,7 +79,9 @@ class _WelcomeState extends State<Welcome> with SingleTickerProviderStateMixin {
       );
   }
   @override
+  @override
   void dispose(){
     animationController.dispose();
+    super.dispose();
   }
 }

@@ -312,5 +312,6 @@ class _ContactState extends State<Contact> with SingleTickerProviderStateMixin {
   @override
   void dispose(){
     animationController.dispose();
+    super.dispose();
   }
 }

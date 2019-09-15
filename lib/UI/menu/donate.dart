@@ -65,7 +65,7 @@ class _DonateState extends State<Donate> with SingleTickerProviderStateMixin {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("images/ocean.jpg"),
+            image: AssetImage("images/donate.jpg"),
             fit: BoxFit.cover,
           ),
         ),
@@ -211,6 +211,6 @@ class _DonateState extends State<Donate> with SingleTickerProviderStateMixin {
   @override
   void dispose(){
     animationController.dispose();
-
+    super.dispose();
   }
 }
