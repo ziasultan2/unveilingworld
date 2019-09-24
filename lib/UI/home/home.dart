@@ -50,6 +50,7 @@ class _HomeState extends State<Home> {
               title: Text('HOME', style: TextStyle(color: Color(0xFF757575),),),
             ),
 
+
             BottomNavigationBarItem(
               icon: Icon(Icons.live_tv, color: Color(0xFF757575),),
               title: Text('LIVE STREAM', style: TextStyle(color: Color(0xFF757575), fontSize: 12),),

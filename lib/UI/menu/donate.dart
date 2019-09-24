@@ -117,7 +117,7 @@ class _DonateState extends State<Donate> with SingleTickerProviderStateMixin {
                       if (await canLaunch(url))
                       {
 
-                        await launch(url, forceSafariVC: true);
+                        await launch(url, forceSafariVC: false);
                       }
                       else{
                         throw 'Could not launch $url';
@@ -148,7 +148,7 @@ class _DonateState extends State<Donate> with SingleTickerProviderStateMixin {
 
                       if (await canLaunch(url))
                       {
-                        await launch(url, forceSafariVC: true);
+                        await launch(url, forceSafariVC: false);
                       }
                       else{
                         throw 'Could not launch $url';
@@ -180,7 +180,7 @@ class _DonateState extends State<Donate> with SingleTickerProviderStateMixin {
 
                       if (await canLaunch(url))
                       {
-                        await launch(url, forceSafariVC: true);
+                        await launch(url, forceSafariVC: false);
                       }
                       else{
                         throw 'Could not launch $url';
