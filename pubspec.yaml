@@ -29,7 +29,6 @@ dependencies:
   path_provider:
   intl:
   url_launcher: ^5.1.2
-  youtube_player_flutter: ^4.1.0
   firebase_messaging: ^5.1.5
   flutter_local_notifications: ^0.8.2
 
