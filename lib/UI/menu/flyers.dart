@@ -29,13 +29,20 @@ class _FlyersState extends State<Flyers> {
             Container(
               width: double.infinity,
               margin: EdgeInsets.only(top: 20, left: 10, right: 10, bottom: 20),
-              child: Image.asset('images/flyers1.jpg', fit: BoxFit.contain),
+              child: Image.asset('images/new1.jpg', fit: BoxFit.contain),
             ),
             Container(
               width: double.infinity,
               margin: EdgeInsets.only(top: 20, left: 10, right: 10, bottom: 20),
-              child: Image.asset('images/flyers2.jpg', fit: BoxFit.contain),
+              child: Image.asset('images/new2.jpg', fit: BoxFit.contain),
             ),
+
+            Container(
+              width: double.infinity,
+              margin: EdgeInsets.only(top: 20, left: 10, right: 10, bottom: 20),
+              child: Image.asset('images/flyers1.jpg', fit: BoxFit.contain),
+            ),
+
             Container(
               width: double.infinity,
               margin: EdgeInsets.only(top: 20, left: 10, right: 10, bottom: 20),
