@@ -42,11 +42,11 @@ class _EventsState extends State<Events> {
                 child: ListTile(
                   leading: Column(
                     children: <Widget>[
-                      Text('SEP', style: TextStyle(fontSize: 16),),
-                      Text('13', style: TextStyle(fontSize: 30),)
+                      Text('OCT', style: TextStyle(fontSize: 16),),
+                      Text('12', style: TextStyle(fontSize: 30),)
                     ],
                   ),
-                  title: Text('Sister 2 Sister', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),),
+                  title: Text('Sister 2 Sister with Lady Shawn Moss ', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),),
                   onTap: (){
                     showDialog(
                         context: context,
@@ -57,54 +57,14 @@ class _EventsState extends State<Events> {
                               height: 200,
                               child: Column(
                                 children: <Widget>[
-                                  Text('Sister 2 Sister', style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold, height: 2),),
-                                  Text('Women Only, Empowerment Session', style: TextStyle(fontSize: 16, height: 1.5), textAlign: TextAlign.center,),
-                                  Text('7pm - 10pm', style: TextStyle(fontSize: 16, height: 1.5), textAlign: TextAlign.left,),
+                                  Text('Sister 2 Sister with Lady Shawn Moss ', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, height: 2), textAlign: TextAlign.center,),
+                                  Text('', style: TextStyle(fontSize: 16, height: 1.5), textAlign: TextAlign.center,),
+                                  Text('2:30pm', style: TextStyle(fontSize: 16, height: 1.5), textAlign: TextAlign.left,),
                                   InkWell(
                                     child:Text('37 Frank Cook Rd., Newnan Georgia', style: TextStyle(fontSize: 16, height: 1.5), textAlign: TextAlign.center,),
                                     onTap: _address,
                                   ),
 
-                                ],
-                              ),
-                            ),
-                            shape: RoundedRectangleBorder(
-                                side: BorderSide(
-                                  style: BorderStyle.none,
-                                ),
-                                borderRadius: BorderRadius.circular(20)
-                            ),
-                          );
-                        });
-                  },
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  leading: Column(
-                    children: <Widget>[
-                      Text('SEP', style: TextStyle(fontSize: 16),),
-                      Text('14', style: TextStyle(fontSize: 30),)
-                    ],
-                  ),
-                  title: Text('Sister 2 Sister', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),),
-                  onTap: (){
-                    showDialog(
-                        context: context,
-                        builder: (context) {
-                          return AlertDialog(
-                            content:
-                            Container(
-                              height: 200,
-                              child: Column(
-                                children: <Widget>[
-                                  Text('Sister 2 Sister', style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold, height: 2),),
-                                  Text('Women Only, Empowerment Session', style: TextStyle(fontSize: 16, height: 1.5), textAlign: TextAlign.center,),
-                                  Text('9am - 4pm', style: TextStyle(fontSize: 16, height: 1.5), textAlign: TextAlign.left,),
-                                  InkWell(
-                                    child:Text('37 Frank Cook Rd., Newnan Georgia', style: TextStyle(fontSize: 16, height: 1.5), textAlign: TextAlign.center,),
-                                    onTap: _address,
-                                  ),
                                 ],
                               ),
                             ),
@@ -199,6 +159,131 @@ class _EventsState extends State<Events> {
                   },
                 ),
               ),
+
+              Card(
+                child: ListTile(
+                  leading: Column(
+                    children: <Widget>[
+                      Text('OCT', style: TextStyle(fontSize: 16),),
+                      Text('27', style: TextStyle(fontSize: 30),)
+                    ],
+                  ),
+                  title: Text('Family & Friends', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),),
+                  onTap: (){
+                    showDialog(
+                        context: context,
+                        builder: (context) {
+                          return AlertDialog(
+                            content:
+                            Container(
+                              height: 200,
+                              child: Column(
+                                children: <Widget>[
+                                  Text('Family & Friends', style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold, height: 2),),
+                                  Text('Family & Friends', style: TextStyle(fontSize: 16, height: 1.5), textAlign: TextAlign.center,),
+                                  Text('4pm', style: TextStyle(fontSize: 16, height: 1.5), textAlign: TextAlign.left,),
+                                  InkWell(
+                                    child:Text('37 Frank Cook Rd., Newnan Georgia', style: TextStyle(fontSize: 16, height: 1.5), textAlign: TextAlign.center,),
+                                    onTap: _address,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                  style: BorderStyle.none,
+                                ),
+                                borderRadius: BorderRadius.circular(20)
+                            ),
+                          );
+                        });
+                  },
+                ),
+              ),
+
+              Card(
+                child: ListTile(
+                  leading: Column(
+                    children: <Widget>[
+                      Text('NOV', style: TextStyle(fontSize: 16),),
+                      Text('2', style: TextStyle(fontSize: 30),)
+                    ],
+                  ),
+                  title: Text('Sisters N the Spirit', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),),
+                  onTap: (){
+                    showDialog(
+                        context: context,
+                        builder: (context) {
+                          return AlertDialog(
+                            content:
+                            Container(
+                              height: 200,
+                              child: Column(
+                                children: <Widget>[
+                                  Text('Sisters N the Spirit', style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold, height: 2),),
+                                  Text('Sisters N the Spirit', style: TextStyle(fontSize: 16, height: 1.5), textAlign: TextAlign.center,),
+                                  Text('10am', style: TextStyle(fontSize: 16, height: 1.5), textAlign: TextAlign.left,),
+                                  InkWell(
+                                    child:Text('37 Frank Cook Rd., Newnan Georgia', style: TextStyle(fontSize: 16, height: 1.5), textAlign: TextAlign.center,),
+                                    onTap: _address,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                  style: BorderStyle.none,
+                                ),
+                                borderRadius: BorderRadius.circular(20)
+                            ),
+                          );
+                        });
+                  },
+                ),
+              ),
+
+              Card(
+                child: ListTile(
+                  leading: Column(
+                    children: <Widget>[
+                      Text('NOV', style: TextStyle(fontSize: 16),),
+                      Text('9', style: TextStyle(fontSize: 30),)
+                    ],
+                  ),
+                  title: Text('Power of Agreement Conference', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),),
+                  onTap: (){
+                    showDialog(
+                        context: context,
+                        builder: (context) {
+                          return AlertDialog(
+                            content:
+                            Container(
+                              height: 200,
+                              child: Column(
+                                children: <Widget>[
+                                  Text('Power of Agreement Conference', style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold, height: 2),),
+                                  Text('Power of Agreement Conference', style: TextStyle(fontSize: 16, height: 1.5), textAlign: TextAlign.center,),
+                                  Text('10am', style: TextStyle(fontSize: 16, height: 1.5), textAlign: TextAlign.left,),
+                                  InkWell(
+                                    child:Text('37 Frank Cook Rd., Newnan Georgia', style: TextStyle(fontSize: 16, height: 1.5), textAlign: TextAlign.center,),
+                                    onTap: _address,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                  style: BorderStyle.none,
+                                ),
+                                borderRadius: BorderRadius.circular(20)
+                            ),
+                          );
+                        });
+                  },
+                ),
+              ),
+
+
               Card(
                 child: ListTile(
                   leading: Column(
